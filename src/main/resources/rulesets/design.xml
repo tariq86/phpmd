@@ -247,9 +247,9 @@ class Foo {
 
   public function bar()
   {
-      try {
-          // ...
-      } catch (Exception $e) {} // empty catch block
+    try {
+        // ...
+    } catch (Exception $e) {} // empty catch block
   }
 }
             ]]>
@@ -275,9 +275,9 @@ class Foo {
 
   public function bar()
   {
-    $array = array();
+    $arr = array();
 
-    for ($i = 0; count($array); $i++) {
+    for ($i = 0; count($arr); $i++) {
       // ...
     }
   }

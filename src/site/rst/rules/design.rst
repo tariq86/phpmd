@@ -149,7 +149,7 @@ This rule has the following properties:
 ========= =============== ============================================
  Name      Default Value   Description                                
 ========= =============== ============================================
- maximum   13              Maximum number of acceptable dependencies. 
+ maximum   13              Maximum number of acceptable dependencies.
 ========= =============== ============================================
 
 DevelopmentCodeFragment
@@ -199,9 +199,9 @@ Example: ::
   
     public function bar()
     {
-        try {
-            // ...
-        } catch (Exception $e) {} // empty catch block
+      try {
+        // ...
+      } catch (Exception $e) {} // empty catch block
     }
   }
 
@@ -210,7 +210,8 @@ CountInLoopExpression
 
 Since: PHPMD 2.7.0
 
-Using count/sizeof in loops expressions is considered bad practice and is a potential source of many bugs, especially when the loop manipulates an array, as count happens on each iteration.
+Using count/sizeof in loops expressions is considered bad practice and is a potential source of
+many bugs, especially when the loop manipulates an array, as count happens on each iteration.
 
 
 Example: ::
@@ -219,9 +220,9 @@ Example: ::
   
     public function bar()
     {
-      $array = array();
-  
-      for ($i = 0; count($array); $i++) {
+      $arr = array();
+
+      for ($i = 0; count($arr); $i++) {
         // ...
       }
     }
